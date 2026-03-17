@@ -9,7 +9,7 @@ GitHub Pull Request를 통해 이 저장소에 추가한다.
 
 
 
-과제 진해 방법은 \[Guide.md](./Guide.md)를 참고한다.
+과제 진행 방법은 [Guide.md](./Guide.md)를 참고한다.
 
 
 
