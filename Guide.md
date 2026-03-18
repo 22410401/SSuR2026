@@ -1,11 +1,10 @@
 # SSuR-2026 과제 제출 가이드
 
-모르는 것은 ChatGPT, Claude 등 AI에게 물어보며 진행한다.  
-각 단계의 목적과 순서를 이해하는 것이 중요하다.
+
 
 ---
 
-## 제출 절차
+## 진행 절차
 
 ### Step 1. GitHub 계정 만들기
 
@@ -21,7 +20,7 @@
 https://github.com/ksublee/SSuR2026
 ```
 
-Fork 후 본인 계정에 `SSuR2026` 저장소가 생성된다.
+Fork 후 본인 계정의 Github에 `SSuR2026` 저장소가 생성된다.
 
 ---
 
@@ -40,9 +39,12 @@ https://ksublee.dev/rstudio8
 
 ### Step 4. Git 사용자 정보 설정
 
+Terminal에서 다음 명령을 한 줄 씩 입력한다.
+
+
 ```bash
 git config --global user.name "본인이름"
-git config --global user.email "GitHub가입이메일"
+git config --global user.email "본인이메일"
 ```
 
 > 이 설정을 하지 않으면 Step 7의 commit 단계에서 아래 오류가 발생한다.
@@ -137,7 +139,7 @@ git push origin 2XXXXXXX
 > 8. 생성된 토큰을 복사해 둔다 (페이지를 벗어나면 다시 볼 수 없다)
 >
 > 이후 비밀번호 입력란에 복사한 토큰을 붙여넣는다.  
-> username은 GitHub 아이디, password는 PAT를 입력한다.
+> username은 GitHub 아이디, password는 PAT(방금 복사한 토큰)를 입력한다.
 
 ---
 
@@ -154,13 +156,13 @@ git push origin 2XXXXXXX
 
 작성 후 **Create pull request** 버튼을 클릭하면 제출 완료이다.
 
-Pull Request가 승인되면 GitHub에서 아래와 같은 이메일이 발송된다.
+Pull Request가 승인되면 GitHub에서 아래와 같은 문구가 포함된 이메일이 발송된다.
 
 ```
 Merged ~ into main.
 ```
 
-이 이메일을 강의포털에 제출한다.
+이 이메일을 캡쳐하여 강의포털에 제출한다.
 
 ---
 
