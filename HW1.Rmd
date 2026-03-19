@@ -53,7 +53,7 @@ for(i in seq_along(x)){
 
 result
 
-# 2. 벡터의 norm 이용 / 윗 방법과 동일한 벡터 사용용
+# 2. 벡터의 norm 이용 / 윗 방법과 동일한 벡터 사용
 x_norm <- sqrt(sum(x^2))
 y_norm <- sqrt(sum(y^2))
 cos <- (x%*%y)/(x_norm*y_norm)
