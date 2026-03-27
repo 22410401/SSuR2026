@@ -103,3 +103,27 @@ vec2 <- c(7,4,2,6,1)
 selection_sort(vec2)
 
 ```
+
+
+
+
+### 정사영 함수 구현
+
+#### 학번: 22310429 / 이름: 안은사랑
+
+한 벡터를 다른 벡터에 정사영하는 함수를 구현하는 예제이다.
+
+```{r}
+vector_projection <- function(x, y) {
+  proj <- (sum(x * y) / sum(y * y)) * y
+  return(proj)
+}
+```
+```{r}
+x <- c(3, 4)
+y <- c(2, 1)
+```
+```{r}
+proj <- vector_projection(x, y)
+proj
+```
