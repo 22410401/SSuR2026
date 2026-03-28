@@ -101,21 +101,26 @@ selection_sort(vec2)
 
 ```
 
-### while 반복문
 
-### 학번 : 22210647 / 이름 : 김병건
 
-반복문을 사용하여 유클리드 호제법(Euclidean algorithm)을 구현했습니다.
 
-유클리드 호제법: 두 양의 정수 a, b를 나눈 나머지 r에 대해 gcd(a,b)=gcd(b,r) 성립한다. 이 과정을 반복해서 나머지가 0이 나오면 a, b의 최대 공약수는 b가 된다.
+### 정사영 함수 구현
+
+#### 학번: 22310429 / 이름: 안은사랑
+
+한 벡터를 다른 벡터에 정사영하는 함수를 구현하는 예제이다.
 
 ```{r}
-a<-120
-b<-75
-while(b!=0){
-  remainder<-a %% b #a를b로 나눈 나머지
-  a<-b              #a 자리에 나눠준 b로 설정
-  b<-remainder      #나눠주는 b 자리를 나머지로 설정
+vector_projection <- function(x, y) {
+  proj <- (sum(x * y) / sum(y * y)) * y
+  return(proj)
 }
-print(a)
+```
+```{r}
+x <- c(3, 4)
+y <- c(2, 1)
+```
+```{r}
+proj <- vector_projection(x, y)
+proj
 ```
